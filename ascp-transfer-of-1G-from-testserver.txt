@@ -1,0 +1,56 @@
+maguire@ccsser2:~/.aspera/connect/bin> ls
+ascp  asperaconnect  asperaconnect.bin  asperacrypt  asunprotect  plugins
+maguire@ccsser2:~/.aspera/connect/bin> env ASPERA_SCP_PASS=demoaspera ./ascp -L- -T -l100m aspera@demo.asperasoft.com:aspera-test-dir-large/1GB /tmp/
+LOG Aspera Connect version 3.6.0.106805
+
+LOG Alternate log directory: "-"
+LOG Configuration: using v2 configuration file "/home/maguire/.aspera/connect/etc/aspera.conf", user -
+LOG Initializing FASP version 3.5.4.103990, license max rate=(unlimited), account no.=1, license no.=1 product=6
+LOG Configured symlink actions: create=1, follow=1, follow_wide=0, skip=0
+LOG [asssh] remote host-key fingerprint f34dfcda4110604e4ecf53e6e18c6559a38cbb43
+LOG [asssh] authentication succeeded, proceeding.
+LOG changing session job size from 0 to 2 to match server configuration
+LOG FASP Session Start uuid=a9063e44-f785-4bca-8e71-3eaa20a64b32 op=recv status=started source=aspera-test-dir-large/1GB (1) dest=/tmp source_prefix=- local=130.237.209.248:42132 peer=198.23.89.123:33001 tcp_port=22 os="Linux 3.7.10-1.45-desktop #1 SMP PREEMPT" ver=3.5.4.103990 lic=6:1:1 peeros="Linux 2.6.32-504.3.3.el6.x86_64 #1 SMP W" peerver=3.5.4.100392 peerlic=10:1:22001 proto_sess=20002 proto_udp=20000 proto_bwmeas=20000 proto_data=20008
+LOG FASP Session Params uuid=a9063e44-f785-4bca-8e71-3eaa20a64b32 userid=0 user="aspera" targetrate=100000000 minrate=0 rate_policy=fair cipher=none resume=0 create=0 ovr=1 times=0 precalc=yes mf=0 mf_path=- mf_suffix=.aspera-inprogress partial_file_suffix=- files_encrypt=no files_decrypt=no file_csum=none dgram_sz=0 prepostcmd=- tcp_mode=no rtt_auto=yes cookie="-" vl_proto_ver=1  peer_vl_proto_ver=1 vl_local=0 vlink_remote=0 vl_sess_id=3840 srcbase=- rd_sz=0 wr_sz=0 cluster_num_nodes=1 cluster_node_id=0 range=0-0 keepalive=no test_login=no proxy_ip=- net_rc_alg=alg_delay exclude_older/newer_than=0/0
+LOG Measured pMTU: 1492 Bytes, start_brtt: 174 ms
+LOG datagram size 1492B, block size 1452B, path MTU 1492B
+1GB                                             0% 2904               --:--    LOG FASP Transfer Start uuid=a9063e44-f785-4bca-8e71-3eaa20a64b32 op=recv status=started file="/tmp/1GB" size=1048576000 start_byte=0 rate=100.00Mbps loss=0.00 rexreqs=0 overhead=0 mtime="2014-04-10 19:49"
+LOG Receiver bl t/o/r/d/ts=2223/2223/0/0/1970 rex_rtt l/h/s/o=0/0/174/8 ooo_rtt l/h/s/o=0/0/174/8 rate_rtt b/l/h/s/r/f=174/175/177/176/0/2 ctl bm/bs=0/0 rex n/s/q/v/a/r=0/0/0/0/0/0 bl l/d/o/r/a/x/dl/df/dm/ds=0/0/0/0/0/0/0/0/0/0 disk l/h/b=0/1/0 vlink lq/lo/rq/ro=0/0/0/0 rate t/m/c/n/vl/vr/r=100000000/0/59680000/59680000/100000000/100000000/100000000 prog t/f/e=3227796/3227796/1000221 rcvD=0
+LOG Receiver DS Qs ds/n/rq/ao/ap/rd/ru/no/po/pc/do=1/0/0/0/0/0/1/0/0/0/0 Rs i/o=1/1 mgmt backlog i/s/n =
+1GB                                            22%  221MB 97.3Mb/s    01:10 ETALOG Receiver bl t/o/r/d/ts=168010/168010/0/0/167517 rex_rtt l/h/s/o=0/0/174/8 ooo_rtt l/h/s/o=0/0/174/8 rate_rtt b/l/h/s/r/f=174/175/182/175/0/1 ctl bm/bs=0/0 rex n/s/q/v/a/r=0/0/0/0/0/0 bl l/d/o/r/a/x/dl/df/dm/ds=0/0/0/0/0/0/0/0/0/0 disk l/h/b=0/1/0 vlink lq/lo/rq/ro=0/0/0/0 rate t/m/c/n/vl/vr/r=100000000/0/100000000/100000000/100000000/100000000/100000000 prog t/f/e=243950520/243950520/21060992 rcvD=0
+LOG Receiver DS Qs ds/n/rq/ao/ap/rd/ru/no/po/pc/do=1/0/0/0/0/0/1/0/0/0/0 Rs i/o=1/1 mgmt backlog i/s/n =
+1GB                                            45%  453MB 97.3Mb/s    00:48 ETALOG Receiver bl t/o/r/d/ts=336110/336110/0/0/335617 rex_rtt l/h/s/o=0/0/174/8 ooo_rtt l/h/s/o=0/0/174/8 rate_rtt b/l/h/s/r/f=174/174/182/176/0/1 ctl bm/bs=0/0 rex n/s/q/v/a/r=0/0/0/0/0/0 bl l/d/o/r/a/x/dl/df/dm/ds=0/0/0/0/0/0/0/0/0/0 disk l/h/b=0/1/0 vlink lq/lo/rq/ro=0/0/0/0 rate t/m/c/n/vl/vr/r=100000000/0/100000000/100000000/100000000/100000000/100000000 prog t/f/e=488031720/488031720/41122269 rcvD=0
+LOG Receiver DS Qs ds/n/rq/ao/ap/rd/ru/no/po/pc/do=1/0/0/0/0/0/1/0/0/0/0 Rs i/o=1/1 mgmt backlog i/s/n =
+1GB                                            68%  686MB 97.3Mb/s    00:27 ETALOG Receiver bl t/o/r/d/ts=504210/504210/0/0/503717 rex_rtt l/h/s/o=0/0/174/8 ooo_rtt l/h/s/o=0/0/174/8 rate_rtt b/l/h/s/r/f=174/174/182/176/0/1 ctl bm/bs=0/0 rex n/s/q/v/a/r=0/0/0/0/0/0 bl l/d/o/r/a/x/dl/df/dm/ds=0/0/0/0/0/0/0/0/0/0 disk l/h/b=0/1/0 vlink lq/lo/rq/ro=0/0/0/0 rate t/m/c/n/vl/vr/r=100000000/0/100000000/100000000/100000000/100000000/100000000 prog t/f/e=732112920/732112920/61183179 rcvD=0
+LOG Receiver DS Qs ds/n/rq/ao/ap/rd/ru/no/po/pc/do=1/0/0/0/0/0/1/0/0/0/0 Rs i/o=1/1 mgmt backlog i/s/n =
+1GB                                            91%  919MB 97.3Mb/s    00:07 ETALOG Receiver bl t/o/r/d/ts=672310/672310/0/0/671817 rex_rtt l/h/s/o=0/0/174/8 ooo_rtt l/h/s/o=0/0/174/8 rate_rtt b/l/h/s/r/f=174/174/182/175/0/1 ctl bm/bs=0/0 rex n/s/q/v/a/r=0/0/0/0/0/0 bl l/d/o/r/a/x/dl/df/dm/ds=0/0/0/0/0/0/0/0/0/0 disk l/h/b=0/1/0 vlink lq/lo/rq/ro=0/0/0/0 rate t/m/c/n/vl/vr/r=100000000/0/100000000/100000000/100000000/100000000/100000000 prog t/f/e=976194120/976194120/81244539 rcvD=0
+LOG Receiver DS Qs ds/n/rq/ao/ap/rd/ru/no/po/pc/do=1/0/0/0/0/0/1/0/0/0/0 Rs i/o=1/1 mgmt backlog i/s/n =
+1GB                                           100% 1000MB 97.3Mb/s    01:26    
+LOG FASP Transfer Stop uuid=a9063e44-f785-4bca-8e71-3eaa20a64b32 op=recv status=success file="/tmp/1GB" size=1048576000 start_byte=0 rate=96.36Mbps elapsed=87.05s loss=0.00 rexreqs=0 overhead=0 mtime="2014-04-10 19:49"
+LOG Receiver bl t/o/r/d/ts=722162/722160/0/2/722160 rex_rtt l/h/s/o=0/0/174/8 ooo_rtt l/h/s/o=0/0/174/8 rate_rtt b/l/h/s/r/f=174/175/178/175/0/1 ctl bm/bs=0/0 rex n/s/q/v/a/r=0/0/0/0/0/0 bl l/d/o/r/a/x/dl/df/dm/ds=0/0/0/0/0/2/0/0/0/0 disk l/h/b=0/1/0 vlink lq/lo/rq/ro=0/0/0/0 rate t/m/c/n/vl/vr/r=100000000/0/100000000/100000000/100000000/100000000/100000000 prog t/f/e=1048576000/1048576000/87494969 rcvD=1
+LOG Receiver DS Qs ds/n/rq/ao/ap/rd/ru/no/po/pc/do=0/0/0/0/0/0/0/0/0/0/0 Rs i/o=1/1 mgmt backlog i/s/n =
+Completed: 1024000K bytes transferred in 87 seconds
+ (95875K bits/sec), in 1 file.
+LOG FASP Session Stop uuid=a9063e44-f785-4bca-8e71-3eaa20a64b32 op=recv status=success source=aspera-test-dir-large/1GB (1) dest=/tmp source_prefix=- local=130.237.209.248:42132 peer=198.23.89.123:33001 tcp_port=22 os="Linux 3.7.10-1.45-desktop #1 SMP PREEMPT" ver=3.5.4.103990 lic=6:1:1 peeros="Linux 2.6.32-504.3.3.el6.x86_64 #1 SMP W" peerver=3.5.4.100392 peerlic=10:1:22001 proto_sess=20002 proto_udp=20000 proto_bwmeas=20000 proto_data=20008
+LOG FASP Session Params uuid=a9063e44-f785-4bca-8e71-3eaa20a64b32 userid=0 user="aspera" targetrate=100000000 minrate=0 rate_policy=fair cipher=none resume=0 create=0 ovr=1 times=0 precalc=yes mf=0 mf_path=- mf_suffix=.aspera-inprogress partial_file_suffix= files_encrypt=no files_decrypt=no file_csum=none dgram_sz=0 prepostcmd=- tcp_mode=no rtt_auto=yes cookie="-" vl_proto_ver=1  peer_vl_proto_ver=1 vl_local=0 vlink_remote=0 vl_sess_id=3840 srcbase=- rd_sz=0 wr_sz=0 cluster_num_nodes=1 cluster_node_id=0 range=0-0 keepalive=no test_login=no proxy_ip=- net_rc_alg=alg_delay exclude_older/newer_than=0/0
+LOG FASP Session Statistics [Receiver] id=a9063e44-f785-4bca-8e71-3eaa20a64b32 delay=176ms rex_delay=8ms ooo_delay=8ms solicited_rex=0.00% rcvd_rex=0.00% rcvd_dups=0.00% ave_xmit_rate 98.63Mbps effective=100.00% effective_rate=98.63Mbps (detail: good_blks 722160 bl_total 722162 bl_orig 722160 bl_rex 0 dup_blks 0 dup_last_blks 0 drop_blks_xnf 2) (sndr ctl: sent 112 rcvd 112 lost 0 lost 0.00%) (rcvr ctl: sent 879 rcvd 877 lost 2 lost 0.23%) (rex  ctl: sent 0 rcvd 0 lost 0 lost 0.00%) (progress: tx_bytes 1048576000 file_bytes 1048576000 tx_time 87494969) rex_xmit_blks 0  xmit_total 722162 rex_xmit_pct 0.00%
+LOG ======= File Transfer statistics =======
+LOG ------- Source statistics -------
+LOG Source argument scans attempted             :          1
+LOG - Source argument scans completed           :          1
+LOG Source path scans attempted                 :          1
+LOG - Source path scans failed                  :          0
+LOG - Source path scans skipped since irregular :          0
+LOG - Source path scans excluded                :          0
+LOG - Source directory scans completed          :          0
+LOG - Source file scans completed               :          1
+LOG Source directory creates attempted          :          0
+LOG - Source directory creates failed           :          0
+LOG - Source directory created or existed       :          0
+LOG Source file transfers attempted             :          1
+LOG - Source file transfers failed              :          0
+LOG - Source file transfers passed              :          1
+LOG - Source file transfers skipped             :          0
+LOG Source bytes transferred                    : 1048576000
+LOG ======= end File Transfer statistics =======
+maguire@ccsser2:~/.aspera/connect/bin> 
